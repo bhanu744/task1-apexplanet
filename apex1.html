@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Basics of Cybersecurity</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f0f8ff;
+      color: #2c3e50;
+      padding: 40px;
+      line-height: 1.6;
+    }
+
+    h1 {
+      text-align: center;
+      color: #1a5276;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      display: block;
+      margin: 0 auto 20px auto;
+    }
+
+    .section {
+      background-color: #ffffff;
+      padding: 20px;
+      margin-top: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      color: #21618c;
+    }
+
+    ul {
+      margin-left: 20px;
+    }
+
+    a {
+      color: #117a65;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    button {
+      padding: 10px 15px;
+      background-color: #117a65;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0e6655;
+    }
+
+    #tips {
+      display: none;
+      margin-top: 10px;
+      color: #154360;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Basics of Cybersecurity</h1>
+
+    <img src="https://wallpapercave.com/wp/wp2691571.jpg" alt="Cybersecurity concept">
+
+    <div class="section">
+      <h2>What is Cybersecurity?</h2>
+      <p>Cybersecurity is the practice of protecting computers, networks, and data from digital attacks, unauthorized access, and damage.</p>
+    </div>
+
+    <div class="section">
+      <h2>Common Threats</h2>
+      <ul>
+        <li><strong>Phishing:</strong> Tricking you into giving personal information via fake emails or websites.</li>
+        <li><strong>Malware:</strong> Malicious software that can harm your device or steal data.</li>
+        <li><strong>Weak Passwords:</strong> Easy-to-guess passwords make it easier for hackers to break in.</li>
+        <li><strong>Public Wi-Fi Risks:</strong> Open networks can expose your data to snoopers.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Want to Stay Safe?</h2>
+      <button onclick="toggleTips()">Click for Safety Tips</button>
+      <div id="tips">
+        <ul>
+          <li>✅ Use strong, unique passwords for each account.</li>
+          <li>✅ Enable two-factor authentication (2FA) where possible.</li>
+          <li>✅ Don’t click on suspicious links or attachments.</li>
+          <li>✅ Keep your software and antivirus updated.</li>
+          <li>✅ Avoid using public Wi-Fi for sensitive transactions.</li>
+        </ul>
+      </div>
+    </div>
+
+<!-- ...rest of your existing code above... -->
+
+<div class="section">
+  <h2>Useful Links</h2>
+  <ul>
+    <li><a href="https://www.cybersecurity.gov/" target="_blank">U.S. Cybersecurity & Infrastructure Security Agency (CISA)</a></li>
+    <li><a href="https://staysafeonline.org/" target="_blank">StaySafeOnline.org</a> – National Cybersecurity Alliance</li>
+    <li><a href="https://haveibeenpwned.com/" target="_blank">Have I Been Pwned</a> – Check if your data has been leaked</li>
+    <li><a href="https://www.kaspersky.com/resource-center/preemptive-safety/top-7-cybersecurity-tips" target="_blank">Kaspersky – Top 7 Cybersecurity Tips</a></li>
+  </ul>
+  
+  <!-- New alert button -->
+  <button onclick="showAlert()">Alert Me</button>
+</div>
+
+<script>
+  function toggleTips() {
+    var tips = document.getElementById("tips");
+    tips.style.display = (tips.style.display === "none") ? "block" : "none";
+  }
+
+  // New alert function
+  function showAlert() {
+    alert("Stay safe online! Remember to update your passwords regularly.");
+  }
+</script>
+
+</body>
+</html>
